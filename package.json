@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "app",
+    "client-electron"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace app run dev\" \"yarn workspace client-electron run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+
+}
