@@ -1,4 +1,4 @@
-import App from './App'
+import { Main } from './entrypoints/Main';
 
-export { App }
-export default App;
+export { Main };
+export default Main;
