@@ -9,7 +9,7 @@ export function Main() {
   return (
     <ThemeProvider theme={dark}>
       <Page>
-        <FileBrowserWindow />
+        <FileBrowserWindow path="./" />
       </Page>
     </ThemeProvider>
   );

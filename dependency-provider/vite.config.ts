@@ -12,13 +12,13 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/main.ts'),
-      name: 'app',
-      fileName: (format) => `app.${format}.js`
+      name: 'dependencyProvider',
+      fileName: (format) => `dependency-provider.${format}.js`
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ['react', 'dependency-provider'],
+      external: ['react'],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps

@@ -6,6 +6,9 @@ function createWindow() {
   const mainWindow = new BrowserWindow({
     height: 600,
     webPreferences: {
+      //TODO: use context bridge coz of security concerns
+      nodeIntegration: true,
+      contextIsolation: false,
       preload: path.join(__dirname, "preload.js"),
     },
     width: 800,

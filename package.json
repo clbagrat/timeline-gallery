@@ -2,7 +2,8 @@
   "private": true,
   "workspaces": [
     "app",
-    "client-electron"
+    "client-electron",
+    "dependency-provider"
   ],
   "scripts": {
     "dev": "concurrently \"yarn workspace app run dev\" \"yarn workspace client-electron run dev\""
