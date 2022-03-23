@@ -3,7 +3,8 @@
   "workspaces": [
     "app",
     "client-electron",
-    "dependency-provider"
+    "dependency-provider",
+    "fs-walker/pkg"
   ],
   "scripts": {
     "dev": "concurrently \"yarn workspace app run dev\" \"yarn workspace client-electron run dev\""

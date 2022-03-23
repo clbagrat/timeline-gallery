@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import { Main } from "app";
 import { DependencyProvider } from 'dependency-provider';
+import * as wasm from 'fs-walker';
 
+wasm.default().then(() => wasm.greet('12313'));
 const fs = window.require('fs');
 console.log({fs})
 
